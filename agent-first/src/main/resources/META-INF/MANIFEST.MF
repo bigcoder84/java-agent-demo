@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: Jindong.Tian
+Agent-Class: cn.bigcoder.demo.agentfirst.MyCustomAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: cn.bigcoder.demo.agentfirst.MyCustomAgent
