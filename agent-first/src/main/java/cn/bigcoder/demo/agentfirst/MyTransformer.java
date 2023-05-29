@@ -35,7 +35,7 @@ public class MyTransformer implements ClassFileTransformer {
             ctMethod.insertBefore("start = System.currentTimeMillis();");
             ctMethod.insertAfter("System.out.println($_);");
             ctMethod.insertAfter("end = System.currentTimeMillis();");
-            ctMethod.insertAfter("System.out.println(start-end);");
+            ctMethod.insertAfter("System.out.println(end-start);");
             byte[] transformed = cl.toBytecode();
             return transformed;
         } catch (Exception e) {
